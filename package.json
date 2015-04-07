@@ -2,6 +2,7 @@
   "name": "stubit",
   "version": "0.0.3",
   "description": "The almost stupid scaffolding/stubbing tool.",
+  "keywords": ["scaffold", "scaffolding", "stubbing", "template", "generator", "skeleton"],
   "author": "Rene Hangstrup Møller (http://giddyplanet.com)",
   "repository": "rhmoller/stubit",
   "license": "MIT",
