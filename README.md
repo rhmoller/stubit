@@ -73,3 +73,8 @@ So to read the version specified in the above example you should use
 ```
   The version number is {{x.version}}
 ```
+
+# More advanced templates
+
+Stubit does not support conditional copying of files or dynamically generated files. If you need
+this, you should take a look at [Yeoman Yo](http://yeoman.io) instead.
