@@ -1,0 +1,15 @@
+{
+  "questions": [
+    {
+      "name": "version",
+      "type": "input",
+      "message": "Version number",
+      "default": "0.0.1"
+    }
+  ],
+
+  "templates": [
+    "package.json",
+    "assets/index.html"
+  ]
+}

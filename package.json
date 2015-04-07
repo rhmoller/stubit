@@ -1,0 +1,20 @@
+{
+  "name": "stubit",
+  "version": "0.0.1",
+  "description": "The almost stupid scaffolding/stubbing tool.",
+  "author": "Rene Hangstrup Møller (http://giddyplanet.com)",
+  "repository": "rhmoller/stubit",
+  "license": "MIT",
+
+  "preferGlobal": true,
+  
+  "bin": {
+    "stubit": "stubit.js"
+  },
+
+  "dependencies": {
+    "handlebars": "^3.0.1",
+    "hogan": "^1.0.2",
+    "inquirer": "^0.8.2"
+  }
+}
