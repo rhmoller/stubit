@@ -28,8 +28,8 @@ Done
 
 # Creating a new project template
 
-A template is simply a folder below TEMPLATE_FOLDER containing all the files
-required for a projet of the given type.
+A template is simply a folder below the templates folder containing all the files
+required for a project of the given type.
 
 An optional stubit.json file can be placed in the folder, if you need to
 ask additional questions, or substitute variables into template files.
@@ -49,11 +49,11 @@ ask additional questions, or substitute variables into template files.
 }
 ```
 
-Questions are specified using [inquirer]{https://github.com/SBoudrias/Inquirer.js} syntax.
+Questions are specified using [inquirer](https://github.com/SBoudrias/Inquirer.js) syntax.
 
 # Template file filter
 
-Specify filter for files that should be treated as [mustache]{https://mustache.github.io} templates.
+Specify filter for files that should be treated as [mustache](https://mustache.github.io) templates.
 
 ```
 {
@@ -64,7 +64,7 @@ Specify filter for files that should be treated as [mustache]{https://mustache.g
 }
 ```
 
-Filters are specified using glob syntax. See [minimatch]{https://github.com/isaacs/minimatch}.
+Filters are specified using glob syntax. See [minimatch](https://github.com/isaacs/minimatch).
 
 The answers from the template specific questions are placed in an object called x
 
