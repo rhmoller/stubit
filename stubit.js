@@ -1,8 +1,28 @@
+#!/usr/bin/env node
 var inquirer = require("inquirer");
 var hogan = require("hogan");
 var fs = require("fs");
 var path = require("path");
 var minimatch = require("minimatch");
+
+if (process.argv.length > 2) {
+  for (var i = 2; i < process.argv.length; i++) {
+    if (process.argv[i].indexOf("help") > -1) {
+      console.log("Stubit - the almost stupid stubbing/scaffolding tool.");
+      console.log();
+      console.log("Allows you to quickly create a new project from a predefined template.")
+      console.log("For instructions on how to create new templates see https://github.com/rhmoller/stubit");
+      console.log();
+      console.log("Usage:");
+      console.log("  stubit");
+      console.log("    starts an interactive command line tool for creating a new project");
+      process.exit();
+    }
+  }
+  console.log("stubit currently ignores command line parameters.")
+  console.log();
+}
+
 
 var templates = fs.readdirSync(__dirname + "/templates");
 
@@ -15,7 +35,7 @@ var questions = [
   {
     type: "input",
     name: "name",
-    message: "Folder name"
+    message: "Create new project in folder"
   },
   {
     type: "rawlist",

@@ -23,16 +23,19 @@ If it is not defined stubit will use the templates folder from the distribution.
 
 Stubit will ask you for the name of project folder it should create.
 Then it will ask you to pick which template to use.
-If the template contains additional questions they will be given now.
-Done
+The template can optionally define a number of parameters, that the user can adjust
+through a nice command line interface. This parameters will be substitued into
+the project template files.
 
 # Creating a new project template
 
 A template is simply a folder below the templates folder containing all the files
-required for a project of the given type.
+required for a project of the given type. This makes it dead simple to create a
+new template.
 
-An optional stubit.json file can be placed in the folder, if you need to
-ask additional questions, or substitute variables into template files.
+An optional stubit.json file can be placed in the root of a template, if it needs
+to substitute values into any of the project files.
+
 
 # Defining additional questions
 
