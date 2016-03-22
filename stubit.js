@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var inquirer = require("inquirer");
-var hogan = require("hogan");
+var handlebars = require("handlebars");
 var fs = require("fs");
 var path = require("path");
 var minimatch = require("minimatch");
@@ -69,8 +69,8 @@ var copyRecursiveSync = function(src, dest, context, matchers, basePos) {
       }
       if (isTemplate) {
         var data = fs.readFileSync(src).toString();
-        var template = hogan.compile(data);
-        var result = template.render(context);
+        var template = handlebars.compile(data);
+        var result = template(context);
         fs.writeFileSync(dest, result);
       } else {
         var data = fs.readFileSync(src).toString();
