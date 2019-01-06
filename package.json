@@ -23,6 +23,7 @@
   "dependencies": {
     "handlebars": "^4.0.5",
     "inquirer": "^3.0.6",
+    "lodash": "^4.17.11",
     "minimatch": "^3.0.0"
   }
 }
