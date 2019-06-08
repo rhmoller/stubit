@@ -21,7 +21,7 @@
     "start": "node stubit.js"
   },
   "dependencies": {
-    "handlebars": "^4.0.5",
+    "handlebars": "^4.1.2",
     "inquirer": "^3.0.6",
     "lodash": "^4.17.11",
     "minimatch": "^3.0.0"
